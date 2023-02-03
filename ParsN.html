@@ -128,3 +128,12 @@ document.addEventListener("keydown", event => {
 myFunction2();
 });
  </script>
+
+<script>
+document.addEventListener("keydown", event => {
+  if (event.isComposing || event.keyCode !== 82) {
+    return;
+  }
+myFunctionr();
+});
+</script>
