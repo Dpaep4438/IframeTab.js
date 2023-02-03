@@ -111,3 +111,12 @@ h2 { font-size: 2em;
 foo. { font-size:10px;
 }
 </style>
+
+<script>
+document.addEventListener("keydown", event => {
+  if (event.isComposing || event.keyCode !== 70) {
+    return;
+  }
+openFullscreen();
+});
+</script>
