@@ -12,7 +12,7 @@ alert("welcome to the iframe tab\nthis page works best on computer\nunfortunatel
     </script>
 
 <script>
-function myFunctionr() {document.getElementById("myFrame").src = self.location.reload()  }
+function myFunctionr() {document.getElementById("myFrame").src = self.location.reload();  }
 </script><title id="myTitle">TTL</title> <button onclick="myFunction2()"class="button butto">change title</button> <script> function myFunction2() { document.getElementById("myTitle").src = document.title = prompt(); } </script>
 <button onclick="openFullscreen();"class="button butto"title="Fullscreen">⇱</button><script>var elem = document.getElementById("myFrame");function openFullscreen() {  if (elem.requestFullscreen) {    elem.requestFullscreen();  } else if (elem.webkitRequestFullscreen) { /* Safari */    elem.webkitRequestFullscreen();  } else if (elem.msRequestFullscreen) { /* IE11 */    elem.msRequestFullscreen();  }}</script>
 <footer>v1.00.14</footer>
