@@ -194,7 +194,7 @@ function uploadAudio(input) {
     reader = new FileReader();
     reader.onload = function(e) {
       audioLink.setAttribute('data-value', e.target.result);
-      audioLink.innerHTML = ""
+      audioLink.innerHTML = " "
     }
     reader.readAsDataURL(input.files[0]);
   }
