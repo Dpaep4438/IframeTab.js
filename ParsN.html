@@ -153,6 +153,14 @@ document.addEventListener("keydown", event => {
 myFunction();
 });
 </script>
+    <script>
+document.addEventListener("keydown", event => {
+  if (event.isComposing || event.keyCode !== 77) {
+    return;
+  }
+uploadAudio(input);
+});
+</script>
 <small><b class="footer foo">Created By Paris Norman</b></small>
     <small><b class="footer foo">v1.00.16</b></small>
 <footer>
@@ -186,7 +194,7 @@ function uploadAudio(input) {
     reader = new FileReader();
     reader.onload = function(e) {
       audioLink.setAttribute('data-value', e.target.result);
-      audioLink.innerHTML = "Click to play"
+      audioLink.innerHTML = ""
     }
     reader.readAsDataURL(input.files[0]);
   }
