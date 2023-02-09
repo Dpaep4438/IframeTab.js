@@ -153,57 +153,30 @@ document.addEventListener("keydown", event => {
 myFunction();
 });
 </script>
-    <script>
+<script>
 document.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode !== 77) {
     return;
   }
-uploadAudio(input);
+ handleFiles(event);
 });
 </script>
 <small><b class="footer foo">Created By Paris Norman</b></small>
     <small><b class="footer foo">v1.00.16</b></small>
 <footer>
     <footer>
-        <p>Upload your audio file:</p>
-<input type="file" id="file">
-<br/><br/>
-<div>
-  <a id="audioLink" href="#" onclick="play(this)" data-value=""></a>
-</div>
-<br/><br/>
-<audio controls="controls" id="audio">
-  <source id="audioSource" src=""></source>
+        <large><b>Music PLayer</b></large>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<input type="file" id="upload" />
+<audio id="audio" controls>
+  <source src="" id="src" />
 </audio>
 <script>
-//declare elements as vars
-var audioUpload = document.getElementById("file");
-var audioLink = document.getElementById('audioLink');
-var audioSource = document.getElementById("audioSource");
-var audioControl = document.getElementById('audio');
-
-//attach event listener to audioUpload input
-audioUpload.addEventListener("change", function() {
-  uploadAudio(this);
-});
-
-//function that will upload audio
-function uploadAudio(input) {
-  var reader;
-  if (input.files && input.files[0]) {
-    reader = new FileReader();
-    reader.onload = function(e) {
-      audioLink.setAttribute('data-value', e.target.result);
-      audioLink.innerHTML = "o"
-    }
-    reader.readAsDataURL(input.files[0]);
-  }
+function handleFiles(event) {
+    var files = event.target.files;
+    $("#src").attr("src", URL.createObjectURL(files[0]));
+    document.getElementById("audio").load();
 }
 
-//function that will play audio after clicking link
-function play(element) {
-  audioSource.src = element.getAttribute('data-value');
-  audioControl.load();
-  audioControl.play();
-};
+document.getElementById("upload").addEventListener("change", handleFiles, false);
 </script>
