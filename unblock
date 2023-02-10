@@ -35,3 +35,11 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+<style> button { background-color: #000FFF;
+   font-size: 17px;
+   color:#ffd90f;
+      font-family: "FontAwesome";
+   font-weight : bold ;
+    border-radius: 12px;
+   }
+   </style>
