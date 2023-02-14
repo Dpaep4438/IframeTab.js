@@ -38,7 +38,8 @@
 <i onclick="go('https://www.reddit.com')" class="fab fa-reddit quicklink"><quicktext>Reddit</quicktext></i>
 </div>
    <button onclick="openFullscreen();"class="button butto"title="Fullscreen">⇱</button><script>var elem = document.getElementById("web");function openFullscreen() {  if (elem.requestFullscreen) {    elem.requestFullscreen();  } else if (elem.webkitRequestFullscreen) { /* Safari */    elem.webkitRequestFullscreen();  } else if (elem.msRequestFullscreen) { /* IE11 */    elem.msRequestFullscreen();  }}</script>
-</center>
+<button onclick="myFunction()"class="button butto">choose</button><script>function myFunction() {  document.getElementById("web").src = prompt();}</script>
+   </center>
 
 <div class="webnav" id="webnav">
 <div class="webtitle">Shadow</div>
@@ -53,6 +54,13 @@ document.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode !== 70) {
     return;
   }
-openFullscreen();
-});
-</script>
+                                 openFullscreen();
+                                 });
+                                 </script><script>
+                                 document.addEventListener("keydown", event => {
+                                   if (event.isComposing || event.keyCode !== 67) {
+                                     return;
+                                   }
+                                 myFunction();
+                                 });
+                                 </script>
