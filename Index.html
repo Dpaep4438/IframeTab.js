@@ -127,6 +127,27 @@ foo. { font-size:10px;
 <style>
     body, html{image-rendering: pixelated;
     </style>
+    <style>
+        .button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+</style>
 <script>
 document.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode !== 70) {
