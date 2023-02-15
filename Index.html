@@ -275,24 +275,23 @@ document.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode !== 77) {
     return;
   }
-openNav()();
+openNav();
 });
 </script>
-
+<script>
+document.addEventListener("keydown", event => {
+  if (event.isComposing || event.keyCode !== 78) {
+    return;
+  }
+closeNav();
+});
+</script>
 <script>
 document.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode !== 67) {
     return;
   }
 myFunctionchoose();
-});
-</script>
-<script>
-document.addEventListener("keydown", event => {
-  if (event.isComposing || event.keyCode !== 77) {
-    return;
-  }
- handleFiles(event);
 });
 </script>
     <small><b class="footer foo">Created By Paris Norman</b></small>
