@@ -198,23 +198,3 @@ document.addEventListener("keydown", event => {
 </script>
     <small><b class="footer foo">Created By Paris Norman</b></small>
     <small><b class="footer foo">v1.00.17</b></small>
-<footer>
-    <footer>
-        <footer>
-            <footer>
-                <footer>
-        <big><b>Music Player</b></big>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<input type="file" id="upload" />
-<audio id="audio" controls>
-  <source src="" id="src" />
-</audio>
-<script>
-function handleFiles(event) {
-    var files = event.target.files;
-    $("#src").attr("src", URL.createObjectURL(files[0]));
-    document.getElementById("audio").load();
-}
-
-document.getElementById("upload").addEventListener("change", handleFiles, false);
-</script>
