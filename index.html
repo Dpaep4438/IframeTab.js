@@ -1,0 +1,565 @@
+<link rel="icon" href="https://cdn.glitch.global/2ad3f86a-7d51-44e4-96b5-c4adcef346e4/favicon.ico?v=1678732864723">
+<body bgcolor="#8b0000">
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/2ad3f86a-7d51-44e4-96b5-c4adcef346e4/favicon.ico?v=1678732864723" />
+  <style>
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  right: 25%;
+  bottom: 25%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid black;
+  border-radius: 100%;
+  border-top: 16px solid red;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+</style>
+</head>
+<link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/2ad3f86a-7d51-44e4-96b5-c4adcef346e4/favicon.ico?v=1678732864723" />
+<div id="loader"class="loader" float="center" style=" text-align: center;">
+  </div></div>
+
+<div style="display:none;" id="myPage" class="animate-bottom">
+
+<!DOCTYPE html>
+  <button onclick="brcr();"class="button butto tab">Credits</button><button onclick="brbm();" class="button butto tab">Bookmarklets</button><button class="button butto tab">Main Page</button>
+  <body onload="beforeload();whatsnew();" style="margin:0;">
+<meta name="description" content="Welcome To The IframeTab (No ADS)" /> <meta name="author" content="Dpaep4438" /> <meta property="og:type" content="website" /> <meta property="og:url" content="https://iframetab.netlify.app//parsn" /> <meta property="og:site_name" content="IframeTab" /> <meta property="og:title" content="TTL" /> <meta property="og:description" content="Welcome To The IframeTab (No ADS)" /><meta name="keywords" content="iframe, netlify, pars" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet" />
+<script src="/parsicles.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/auth0-js/9.20.2/cordova-auth0-plugin.min.js.map"></script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+  <script src="/login.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/9.20.2/auth0.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+    <html lang="en-us"><head>
+<meta charset="utf-8">
+      <script>var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://dev-5avjx6cl3s5n4w1l.us.auth0.com/oauth/token",
+  "method": "POST",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "data": "{\"client_id\":\"JLVxOPdczCiip8108Di57WdgmLfSGCfW\",\"client_secret\":\"yiB_Xq8qeKrubzN1_IZuLecdJ6eAq2j16wZR-6DK08YTkG1uGxQi-8GjppAduO_v\",\"audience\":\"https://iframetab.glitch.me/\",\"grant_type\":\"client_credentials\"}"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style> @import url('https://fonts.googleapis.com/css?family=Armata&display=swap'); .button { font-family: 'Armata', sans-serif; color: rgba(0, 0, 0, 0.8); font-weight: 400; line-height: 1.58; font-size: 20px; } } </style> 
+  <style>
+/*Position and style for the sidebar*/
+.sidebar {
+height: 100%;
+width: 0;
+position: fixed;
+/*Stays in place */
+background-color: #8b0000;
+/*green*/
+overflow-y: scroll;
+/*for Disabling horizontal scroll */
+}
+/* Position and style for the sidebar links */
+.sidebar a {
+padding: 10px 10px 10px;
+font-size: 25px;
+color: #111;
+display: block;
+transition: 0.3s;
+}
+/* the links change color when mouse hovers upon them*/
+.sidebar a:hover {
+color: #FFFFFF;
+}
+/* Position and style the for cross button */
+.sidebar .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+}
+/* Style for the sidebar button */
+.openbtn {
+background-color: #000FFF;
+  font-family: 'Minecraft', sans-serif;
+color: #ffd90f;
+  font-weight : bold ;
+padding: 10px 10px 10px;
+border: none;
+}
+/* the sidebar button changes
+color when mouse hovers upon it */
+.openbtn:hover {
+color: #FFFFFF;
+  padding: 10px 10px 10px;
+border: none;
+
+}
+
+/* pushes the page content to the right
+when you open the side navigation */
+#main {
+transition: margin-left .5s;
+/* If you want a transition effect */
+padding: 10px;
+}
+ </style>  
+      
+  
+      </head>
+        <head>
+      
+<div id="sidebar" class="sidebar">
+</a>
+      <footer><button style="border-color: transparent; background-color: transparent; font-size: 2em; height:0.1px; width: 40px; text-align: center;" onclick="closeNav(); float: right;" class="button butto">×</button>
+<button onclick="myFunction31()"class="button butto">Python Console</button>
+<script>
+function myFunction31() { document.getElementById("myFrame").src = "https://console.python.org/python-dot-org-console/console_frame/"; }
+</script>
+<button onclick="myFunction16()"class="button butto">Space Invaders</button>
+<script>
+function myFunction16() { document.getElementById("myFrame").src = "https://pars-titanium.glitch.me/service/hvtrs8%2F-gcmgs%2Ccpaxyeaoeq.aoo%2Fgn%5DUQ%2Fqpccg-kntafeps-ildgx%2Chvmn"; }
+</script>
+<button onclick="myFunction17()"class="button butto">Slope</button>
+<script>
+function myFunction17() { document.getElementById("myFrame").src = "https://advanced-channeler.02.gz-associates.com/?t=tmm-slope"; }
+</script>
+<button onclick="myFunction18()"class="button butto">Fnaf 1</button>
+<script>
+function myFunction18() {
+document.getElementById("myFrame").src = "https://tungsten-swanky-weeder.glitch.me/service/hvtrs8%2F-rwn1.ko-pmpeaoe-flad%2Fdncf3%2F";
+}
+</script>
+  <button onclick="myFunction25()"class="button butto">Fnaf 2</button>
+<script>
+function myFunction25() {
+document.getElementById("myFrame").src = "https://mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=ae544275558c6f9&libs=core&mid=54&parent=https://sites.google.com/site/freegamessites/little-alchemy-2#up_scroll=no&up_iframeURL=https://run3.io/popgame/fnaf/fnaf2.html&st=e=AIHE3cCLhDZkbeNiHTHrGsWodHmTj6NlzPiEQzKUwVLp4zin9Ul%2FTzJzdDnVNHBcp%2BjJeKkXlucYsYrSHrDgwx0fwoJk1xfq510WMIOlKM9GzmjFpWLLhQRu%2B2m%2FB3ZtqzPpLHRGxHqz&c=enterprise&rpctoken=7605869604686958188";
+}
+</script>
+    <button onclick="myFunction26()"class="button butto">Fnaf 3</button>
+<script>
+function myFunction26() {
+document.getElementById("myFrame").src = "https://mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=ae544275558c6f9&libs=core&mid=54&parent=https://sites.google.com/site/freegamessites/little-alchemy-2#up_scroll=no&up_iframeURL=https://run3.io/popgame/fnaf/fnaf3.html&st=e=AIHE3cCLhDZkbeNiHTHrGsWodHmTj6NlzPiEQzKUwVLp4zin9Ul%2FTzJzdDnVNHBcp%2BjJeKkXlucYsYrSHrDgwx0fwoJk1xfq510WMIOlKM9GzmjFpWLLhQRu%2B2m%2FB3ZtqzPpLHRGxHqz&c=enterprise&rpctoken=7605869604686958188";
+}
+</script>
+  <button onclick="myFunction27()"class="button butto">Fnaf 4</button>
+<script>
+function myFunction27() {
+document.getElementById("myFrame").src = "https://mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=ae544275558c6f9&libs=core&mid=54&parent=https://sites.google.com/site/freegamessites/little-alchemy-2#up_scroll=no&up_iframeURL=https://run3.io/popgame/fnaf/fnaf4.html&st=e=AIHE3cCLhDZkbeNiHTHrGsWodHmTj6NlzPiEQzKUwVLp4zin9Ul%2FTzJzdDnVNHBcp%2BjJeKkXlucYsYrSHrDgwx0fwoJk1xfq510WMIOlKM9GzmjFpWLLhQRu%2B2m%2FB3ZtqzPpLHRGxHqz&c=enterprise&rpctoken=7605869604686958188";
+}
+</script>
+  <button onclick="myFunction28()"class="button butto">Fnaf SL</button>
+<script>
+function myFunction28() {
+document.getElementById("myFrame").src = "https://mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=ae544275558c6f9&libs=core&mid=54&parent=https://sites.google.com/site/freegamessites/little-alchemy-2#up_scroll=no&up_iframeURL=https://run3.io/popgame/fnaf/fnafsl.html&st=e=AIHE3cCLhDZkbeNiHTHrGsWodHmTj6NlzPiEQzKUwVLp4zin9Ul%2FTzJzdDnVNHBcp%2BjJeKkXlucYsYrSHrDgwx0fwoJk1xfq510WMIOlKM9GzmjFpWLLhQRu%2B2m%2FB3ZtqzPpLHRGxHqz&c=enterprise&rpctoken=7605869604686958188";
+}
+</script><button onclick="myFunction19()"class="button butto">1v1.LoL</button>
+<script>
+function myFunction19() { document.getElementById("myFrame").src = "https://docs-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/ko1ov/to@1e8a949f89fcf2b110640c41a0705db01405d161/d7uf4.xml"; }
+</script><button onclick="myFunction20()"class="button butto">Shell-shockers</button>
+<script>
+function myFunction20() { document.getElementById("myFrame").src = "https://tam-shellshockers.arfotoarte.com/"; }
+</script>
+<button onclick="myFunction21()"class="button butto">FNF</button>
+<script>
+function myFunction21() { document.getElementById("myFrame").src = "https://ultraviolet-app-production-c412.up.railway.app/uv/service/hvtrs8%2F-wuw%2Cflfeo%2Ccmm-"; }
+</script><button onclick="myFunction22()"class="button butto">Getting over it (scratch)</button>
+<script>
+function myFunction22() { document.getElementById("myFrame").src = "https://scratch.mit.edu/projects/389464290/embed"; }
+</script><button onclick="myFunction23()"class="button butto">Minecraft</button>
+<script>
+function myFunction23() { document.getElementById("myFrame").src = "https://dented-phase-dirigible.glitch.me/"; }
+</script>
+  <button onclick="myFunction24()"class="button butto">Taz Mechanic Simulator</button>
+<script>
+function myFunction24() { document.getElementById("myFrame").src = "https://pars-titanium.glitch.me/service/hvtrs8%2F-svopaee%2Cy%3A.aoo%2F%7B8%2Fsvufim%2Fwnkt%7B%2Fckgeoyukc%2Fvax_oeahcnkc%5Dskmwlctmr-%3Fie%7B%3D%7B8"; }
+</script>
+<button onclick="myFunction29()"class="button butto">GTA5 with Spiderman</button>
+<script>
+function myFunction29() { document.getElementById("myFrame").src = "https://tungsten-swanky-weeder.glitch.me/service/hvtrs8%2F-wuw%2Cgcmgaptgr%2Ccmm-gcmg%2Fcmczkne-qtpalgg-pore%2Fpmlkcg-tiae%2Fsrifep-teeaq%2F"; }
+</script>
+  <button onclick="myFunction30()"class="button butto">Cookie Clicker</button>
+<script>
+function myFunction30() { document.getElementById("myFrame").src = "https://advanced-channeler.02.gz-associates.com/?t=tmm-cookieclicker"; }
+</script>
+  </div>
+
+<div id="main">
+<button class="openbtn butto button"
+onclick="openNav()">
+More Games
+</button>
+<!-- for the sidebar button-->
+</div>
+
+<script>
+/* Sets the width of the sidebar
+to 250 and the left margin of the
+page content to 250 */
+function openNav() {
+document.getElementById(
+"sidebar").style.width = "250px";
+document.getElementById(
+"main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar
+to 0 and the left margin of the
+page content to 0 */
+function closeNav() {
+document.getElementById(
+"sidebar").style.width = "0";
+document.getElementById(
+"main").style.marginLeft = "0";
+}
+</script>
+</html>
+ <body onload="whatsnew();" bgcolor="#8b0000"></body> 
+  <style> body { margin: 0; padding: 0; } h2 { color: transparent; text-align: center; animation: effect 2s linear infinite; } @keyframes effect { 0% { background: linear-gradient( red, red); -webkit-background-clip: text; } 100% { background: linear-gradient( #000000, #000000); -webkit-background-clip: text; } } </style><h1 class="body bod ttl" style="font-family: 'Minecraft', sans-serif;"> Iframe Tab <h1><button onclick="myFunctionc()"class="button butto">Credits</button><script>function myFunctionc() { alert("Cursor.cc - thanks for the cursors W3schools - thanks for several scripts and html codes forums.tumult.com - thanks for the password script (only on the js version) javascript.com - thanks for the var script retrogames.cc - thanks for the retro games mschf - thanks for dino swords .ee - thanks for the .ee games geeksforgeeks.org - thanks for the color changing text stackoverflow.com - thanks for the >>more games<< collapsible table and thanks to all the others who helped make this possible"); }</script><button onclick="myShortcuts()"class="button butto">Shortcuts</button><script>function myShortcuts() { alert("F= fullscreen\nT= Change Title\nR= Reset Iframe\nC= Choose\nM= Open Sidebar\nN= Close Sidebar\nH= Run Html"); }</script><h2 class="center" style="font-family: 'Minecraft', sans-serif; font-weight : bold;">Welcome<h2><!DOCTYPE html><html> <div align="center"><iframe style="border-color: black;"align="center" scrolling="yes" name="myFrame" id="myFrame" class="framo fram"src="/parsicles.html"` width="1192"height="576"></iframe></div><p style="font-family: 'Minecraft', sans-serif; font-weight : bold;">Choose a link to go into the iframe.</p><button onclick="myFunctionchoose()"class="button butto">choose</button><script>function myFunctionchoose() {document.getElementById("myFrame").src = prompt();}</script>
+<button onclick="framereload();" class="button butto">Reload frame</button><script>function framereload(){document.getElementById('myFrame').contentWindow.location.reload();}</script>
+<button onclick="framereset();" class="button butto">Reset frame</button><script>function framereset(){document.getElementById("myFrame").src = "https://iframetab.glitch.me/parsicles.html"; }</script>
+<button onclick="myFunctionfavicon();" title="" class="button butto" id="" >change favicon</button><script>function myFunctionfavicon(){var link = document.querySelector("link[rel~='icon']");
+if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+}
+link.href =prompt();}</script>
+      <script>function getdisguise(){var proxylink = window.open(prompt("choose a disguise")); proxylink.onload = "createframe();"}</script>
+<script>function createframe(){var frameproxy = document.createElement('script'); frameproxy.setAttribute('src','https://parsey-scripts.glitch.me/porta-proxy.js'); document.body.appendChild(frameproxy);}</script><script>function myFunctionreload(){document.getElementById('myFrame').src = self.location.reload();}</script><script>function myFunctionUnavailable() {document.getElementById("Unav").innerHTML = "Unavailable";}</script>
+<script>
+function whatsnew() {
+Swal.fire({
+  title: '<big><big><big><b>Whats New</b></big></big></big>',
+  html: '<big><b>The IframeTab has a new particle animation</b></big>',
+  color: 'black',
+   background: '#8b0000',
+  imageUrl: 'https://cdn.glitch.global/2ad3f86a-7d51-44e4-96b5-c4adcef346e4/Screen%20recording%202023-04-12%202.35.31%20PM%20(online-video-cutter.com)%20(1).gif?v=1681325485819',
+  imageWidth: 300,
+  imageHeight: 200,
+  imageAlt: 'https://cdn.glitch.global/2ad3f86a-7d51-44e4-96b5-c4adcef346e4/favicon.ico?v=1678732864723',
+  confirmButtonColor: "red"
+})}
+</script>
+  <script>
+<script>
+function myFunctionr() {document.getElementById("myFrame").src = document.getElementById('myFrame').contentWindow.location.reload(); }
+</script><title id="myTitle">TTL</title> <button onclick="myFunction2()"class="button butto">change title</button> <script> function myFunction2() { document.getElementById("myTitle").src = document.title = prompt(); } </script>
+<button onclick="openFullscreen();"class="button butto"title="Fullscreen"><i class="material-icons">&#xe5d0;</i></button><script>var elem = document.getElementById("myFrame");function openFullscreen() { if (elem.requestFullscreen) { elem.requestFullscreen(); } else if (elem.webkitRequestFullscreen) { /* Safari */ elem.webkitRequestFullscreen(); } else if (elem.msRequestFullscreen) { /* IE11 */ elem.msRequestFullscreen(); }}</script>
+<footer>
+<button onclick="myFunction3()"class="button butto">Pokemon Fire Red</button><script>function myFunction3() {document.getElementById("myFrame").src = "https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html"; }</script>
+<button onclick="myFunction4()"class="button butto">Kirby's Adventure</button><script>function myFunction4() {document.getElementById("myFrame").src = "https://www.retrogames.cc/embed/22129-kirby-s-adventure-usa.html"; }</script>
+<button onclick="myFunction5()"class="button butto">ExciteBike</button><script>function myFunction5() {document.getElementById("myFrame").src = "https://www.retrogames.cc/embed/27769-classic-nes-excite-bike-u-psychosis.html"; }</script>
+<button onclick="myFunction6()"class="button butto">Duck Hunt</button>
+<script>
+function myFunction6() { document.getElementById("myFrame").src = "https://www.retrogames.cc/embed/21039-duck-hunt-world.html"; }
+</script>
+<button onclick="myFunction7()"class="button butto">Dino Swords</button>
+<script>
+function myFunction7() { document.getElementById("myFrame").src = "https://dinoswords.gg/"; }
+</script>
+<button onclick="myFunction8()"class="button butto">Kirby and the amazing mirror</button>
+<script>
+function myFunction8() { document.getElementById("myFrame").src = "https://www.retrogames.cc/embed/19385-kirby-and-the-amazing-mirror-e-rising-sun.html"; }
+</script>
+<button onclick="myFunction9()"class="button butto ">Temple Run</button>
+<script>
+function myFunction9() { document.getElementById("myFrame").src = "https://templerun.ee/"; }
+</script>
+<button onclick="myFunction10()"class="button butto">Touchdown Football</button>
+<script>
+function myFunction10() { document.getElementById("myFrame").src = "https://www.retrogames.cc/embed/35046-touchdown-football-usa.html"; }
+</script>
+<footer>
+<button onclick="myFunction12()"class="button butto">Flappy Bird</button>
+<script>
+function myFunction12() { document.getElementById("myFrame").src = "https://flappybird.ee/"; }
+</script>
+<button onclick="myFunction13()"class="button butto">PAC-MAN</button>
+<script>
+function myFunction13() { document.getElementById("myFrame").src = "https://pacman.ee/"; }
+</script>
+<button onclick="myFunction14()"class="button butto">Q-bert</button>
+<script>
+function myFunction14() { document.getElementById("myFrame").src = "https://qbert.ee/"; }
+</script>
+<button onclick="myFunction15()"class="button butto">Donkey Kong</button>
+<script>
+function myFunction15() { document.getElementById("myFrame").src = "https://kong.ee/"; }
+</script>
+<script>
+function myFunction() {
+var dots = document.getElementById("dots");
+var moreText = document.getElementById("more");
+var btnText = document.getElementById("myBtn");
+
+if (dots.style.display === "none") {
+dots.style.display = "inline";
+btnText.innerHTML = "More Games";
+moreText.style.display = "none";
+} else {
+dots.style.display = "none";
+btnText.innerHTML = "More Games";
+moreText.style.display = "inline";
+}
+}
+</script>
+  <style> html{ cursor: url('data:image/x-icon;base64,AAACAAEAICAQAB4AAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAOzk7AEApSgBwZ3AAIiEvAIZ7hgAnJzIAPjxPABQIFgAyNGAAEhAjAF1WXQBDRXMATkRRAAAAAAAAAAAAiKqqAAAAAAAAAAAAAAAAAIiqqgAAAAAAAAAAAAAAAAAiZqoAAAAAAAAAAAAAAAAAImaqAAAAAAAAAAAAAAAAACIiEaoAAAAAqqoAAAAAAAAiIhGqAAAAAKqqAAAAAAAAAABEzKoAqqpmqgAAAAAAAAAARMyqAKqqZqoAAAAAAAAAAABEmap3ZqoAAAAAAAAAAAAARJmqd2aqAAAAAAAAAAAAAAAiu92qAAAAAAAAAAAAAAAAIrvdqgAAAAAAAAAAAAAAIjMzZneqAAAAAAAAAAAAACIzM2Z3qgAAAAAAAAAAAAAiMyJ3ZneqAAAAAAAAAAAAIjMid2Z3qgAAAAAAAAAAIrsiACLdZneqAAAAAAAAACK7IgAi3WZ3qgAAAAAAAAAiIgAAACLdZneqAAAAAAAAIiIAAAAi3WZ3qgAAAAAAAAAAAAAAACK73buqAAAAAAAAAAAAAAAiu927qgAAAAAAAAAAAAAAACIz3TOqAAAAAAAAAAAAAAAiM90zqgAAAAAAAAAAAAAAACJV3VWqAAAAAAAAAAAAAAAiVd1VqgAAAAAAAAAAAAAAACJVM1WqAAAAAAAAAAAAAAAiVTNVqgAAAAAAAAAAAAAAACJVVaoAAAAAAAAAAAAAAAAiVVWqAAAAAAAAAAAAAAAAACIiIgAAAAAAAAAAAAAAAAAiIiID////A////wP///8D////AP8P/wD/D//wMA//8DAP//wAP//8AD///wD///8A///8AD///AA///wAD//8AA//8DAD//AwA//w/AD/8PwA////AD///wA////AD///wA////AD///wA////AD///wA////AP///wD////A////wA=='), auto; }</style>
+  <style> button { cursor:url('data:image/x-icon;base64,AAACAAEAICAQABsABgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAOzk7AEApSgBwZ3AAIiEvAIZ7hgA+PE8AQ0BDADI0YAASECMAXVZdAENFcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZAAAAAAAAAAAAAAAAAACZmQAAAAAAAAAAAAAAAAAARLuZAAAAAAAAAAAAAAAAAES7mQAAAAAAAAAAAAAAAAAARBGZAAAAAAAAAAAAAAAAAEQRmQAAAAAAAAAAAAAAAAAARHeZAAAAAAAAmQAAAAAAAER3mQAAAAAAAJkAAAAAAAAARBGZAAAAAJlVmQAAAAAAAEQRmQAAAACZVZkAAAAAAAAARLuZAAAAmVWZAAAAAAAAAES7mQAAAJlVmQAAAAAAAAAARIiZAACZVZkAAAAAAAAAAESImQAAmVWZAAAAAAAAAAAARLuZAJkzmQAAAAAAAAAAAES7mQCZM5kAAAAAAAAAAAAARIiZZqqZAAAAAAAAAAAAAESImWaqmQAAAAAAAAAAAAAARGaqmQAAAAAAAAAAAAAAAERmqpkAAAAAAAAAACKZmZlmqruZAAAAAAAAAAAimZmZZqq7mQAAAAAAAAAiVVVVM6oiIkQAAAAAAAAAIlVVVTOqIiJEAAAAAAAAAAAiIiIiIgAAAAAAAAAAAAAAIiIiIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////D////w////8D////A////8D////A////8D/8//A//P/8D/A//A/wP/8D8D//A/A//8DwP//A8D//8DA///AwP//8AD///AA///8A////AP//AAD//wAA//wAAP/8AAD//wA///8AP//////////////////////w=='), auto; } </style>
+<style> input { cursor:url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP9qAAHgB4AB+B+AABw4AAAGYAAAA8AAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAfgAAAH4AAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAADwAAABmAAABw4AAH4H4AB4AeA/h/4f/4H4H//48f///mf///8P////n////5////+f////n////5////+f////n////5////+f///+B////gf///+f////n////5////+f////n////5////+f////n////5////+f////n////w////5n///48f//gfgf/4f+H8='), auto; } </style>
+<footer>
+  <style>@keyframes frameanimation {
+  33.3333333% {background-color: black;}
+  50%  {background-color: red;}
+  99% {background-color: #8b0000;}
+}
+</style>
+  <style>@keyframes ttlanimation {
+  33.3333333% {background-color: green -webkit-background-clip: text;}
+  50%  {background-color: blue -webkit-background-clip: text;}
+  99% {background-color: #fd0000 -webkit-background-clip: text;}
+}
+  </style>
+    
+  <style>.ttl { background-color: transparent;
+animation-name: ttlanimation;
+  animation-duration: 8s;
+    animation-iteration-count: infinite;
+    }  </style>
+  <style>
+    .unavailable {background-color: #000FFF;
+font-weight : bold ;
+border-radius: 12px;
+font-size: 17px;
+color:#ffd90f;
+opacity: 0.6;
+font-family: "FontAwesome";
+      image-rendering: pixelated;
+}</style>
+  <style>.unavailable:hover {background-color: #000FFF;
+font-weight : bold ;
+border-radius: 12px;
+font-size: 17px;
+color:#ffd90f;
+opacity: 0.6;
+font-family: "FontAwesome";
+    image-rendering: pixelated;
+}</style>
+<style> .button { background-color: #000000;
+border-radius: 12px;
+font-size: 17px;
+  font-family: 'Minecraft', sans-serif;
+color:red;
+  image-rendering: pixelated;
+  border-color:transparent
+}
+</style>
+<style> .button:hover { background-color: red;
+font-size: 17px;
+color:#000000;
+  font-family: 'Minecraft', sans-serif;
+border-radius: 12px;
+  image-rendering: pixelated;
+}
+</style>
+<style>
+
+<style> .button:active { background-color: #ffd90f;
+font-size: 17px;
+color:#ffd90f;
+font-family: 'Minecraft', sans-serif;
+border-radius: 12px;
+  image-rendering: pixelated;
+}
+</style>
+<style>
+        .moreg { height:70px;
+width:100px;
+font-size: 19px;
+          image-rendering: pixelated;
+}
+<style> .bod { background-color: #8B0000;
+color:#ffd90f;
+  animation-name: ttlanimation;
+font-size: 2em;;
+font-family: 'Minecraft', sans-serif;
+font-weight : bold ;
+border-radius: 12px;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+</style>
+<style>
+.framo { background-color: red;
+   animation-name: frameanimation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  border-radius: 12px;
+}
+</style>
+<style>
+.fram:hover { cursor:url('data:image/x-icon;base64,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AAAAAAAAMWGD383////B////tf///6D2/v+f9P//pvb//6ng/v+s0f7/CihBqQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH1Z3/8H///+7////asPX/6f///+1////o+f//7z9//8OMFKpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEERj/9X///9zvdP/sf///7v///+t8///vP///wgkQaoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCY6/LnX6f/V/f//w/7//73////L9///DSI7jgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEFyUXAw4ZUg0lOo4KIzkq/////4f///8D/r//A/g//4Dwf/+AcH//4AD///AA///4AP//+AD///wA///8AH///AAf//AAD//gAAf/wAAD/8PgAf/D8AD/z/gAf//8AD///gAf//8AD///gAf//8AD///gAf//8AD///gA///8AP///gD///8A////gP////0='), pixelated; } 
+</style>
+  <style>.center{text-align: center;}</style>
+<style>
+h1 { font-size: 2em;
+}
+p { font-size: 2em;
+}
+summary { font-size: 1em;
+}
+h2 { font-size: 2em;
+}
+foo. { font-size:10px;
+}
+</style>
+  <style>.ads{  float: right;
+  width: 100px;
+  height: 150px;
+  padding: 0px;</style>
+<style>
+body, html{image-rendering: pixelated;
+</style>
+  <style>.swal2-popup {
+    font-family: 'Minecraft', sans-serif;}
+</style>
+  <style>body {
+}</style>
+  <style>.swal2-title {
+  color: red;
+}</style>
+  <style>
+ @import url('https://fonts.cdnfonts.com/css/minecraft-3');
+</style>
+  <style>.tab{float: right; border-color: black; height: 50px;}</style>
+     <script>function brbm(){window.open("https://iframetab.glitch.me/b.html","_self")}</script>
+  <script>function brcr(){window.open("https://iframetab.glitch.me/c.html","_self")}</script>
+<script>
+document.addEventListener("keydown", event => {
+if (event.isComposing || event.keyCode !== 70) {
+return;
+}
+openFullscreen();
+});
+</script>
+<script>
+document.addEventListener("keydown", event => {
+if (event.isComposing || event.keyCode !== 84) {
+return;
+}
+myFunction2();
+});
+</script>
+
+<script>
+document.addEventListener("keydown", event => {
+if (event.isComposing || event.keyCode !== 77) {
+return;
+}
+openNav();
+});
+</script>
+<script>
+document.addEventListener("keydown", event => {
+if (event.isComposing || event.keyCode !== 78) {
+return;
+}
+closeNav();
+});
+</script>
+<script>
+document.addEventListener("keydown", event => {
+if (event.isComposing || event.keyCode !== 67) {
+return;
+}
+myFunctionchoose();
+});
+</script>
+<script>
+document.addEventListener("keydown", event => {
+if (event.isComposing || event.keyCode !== 72) {
+return;
+}
+myFunctionrun();
+});
+</script>
+  <script>
+document.addEventListener("keydown", event => {
+if (event.isComposing || event.keyCode !== 73) {
+return;
+}
+myFunctionfavicon();
+});
+</script>
+    <script>
+document.addEventListener("keydown", event => {
+if (event.isComposing || event.keyCode !== 87) {
+return;
+}
+whatsnew();
+});
+</script>
+<small><b class="footer foo">Created By Paris Norman</b></small>
+  <small></small>
+  </footer></footer></footer></body>
+</div>
+
+<script>
+var myVar;
+
+function beforeload() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myPage").style.display = "block";
+}
+</script>
+<link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/2ad3f86a-7d51-44e4-96b5-c4adcef346e4/favicon.ico?v=1678732864723" />
+</body>
+  <link rel="icon" href="https://cdn.glitch.global/2ad3f86a-7d51-44e4-96b5-c4adcef346e4/favicon.ico?v=1678732864723">
+</html>
